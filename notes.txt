@@ -1,0 +1,162 @@
+Java Programming Masterclass
+
+Section 1:
+
+*Introduction to the course*
+
+JDK - Java Development Kit
+		-used to develop java projects
+		
+*Remaster in progress*
+
+Section 3:
+
+Hello world Project
+
+Keywords are case sensitive
+public - is an access modifier is the scope or how other parts of code access this code
+
+class - define a class, the class name is followed by the keyword class
+
+To define a class:
+	- access modifier
+	- keywod class
+	- class name
+	
+20: Defining the Main Method
+main method = entry point of program
+
+Static is needed for java to find the method
+
+datatype of the return value of the method
+
+Statement = complete command to be executed and can include one or more expressions
+
+21:
+
+22: Variables
+
+Variables are ways to store information in our computer
+
+Different types of variables (Data Types)
+
+int - numbers
+
+To declare a variable use the datatype keyword i.e. int
+
+= sign is used for assigning values
+
+Java operators four common -> +,-,/,*
+
+24. Primitive types
+boolean, byte, char, short, int, long, float, double
+
+packages = a way to organize your java projects folders
+
+Integer.MIN_VALUE = min value of datatype int
+
+Integer = wrapper class; each primative type has a corresponding wrapper class
+
+data overflow = if you go out of range of the data type it will attempt to create the value
+	but it will circle around
+data underflow is the opposite direction of the overflow
+
+int will allow underscores as commas in large numbers eg. 2_147_483_647 for 2,147,483,647
+
+
+25: byte, short, long and width
+size of primitive types and width
+byte = 8 bits, so it has a width of 8
+short = 16 bits, width 16
+int = 32 bits, width 32
+
+each primitive type occupies a different amount of memory
+
+long literal ends with 'L'
+	if you don't have the 'L' it will treat it as an integer instead of a long
+	-long do not have decimals
+	
+26. Casting in java
+convert a number from one type to another
+(datatype)(value to cast)
+
+java automatically assumes a variable is an int. so always use int unless you got a really good reason to.
+
+28: float and double primitive type
+
+single has width of 32
+double has width of 64
+
+float use f e.g. 5f
+double use d e.g. 5d
+
+29: Floating point prec
+float will go 7 digits after decimal
+double will go 17 digits after decimal
+
+30.The Char and Boolean Primitive Data Types
+Char uses single quotes
+string uses double quotes
+
+char is 2 bytes = 16 width 
+	- allows storing unicode characters
+	
+	-to use unicode must use \u then the unicode value
+	\u tells java that the following numbers is a unicode value
+	
+Boolean true or false, 1 or 0
+	-is____
+
+31: Primitive Types recap and the string data type
+
+string is a sequence of characters
+limited by the heap space or the max_value of an int ~2.14 billion
+
+doing '+' with string will cause it do concatonation, no other operators can be applied to string
+strings are immuatable
+	- a new string is created automatically, and discards the old one from memory
+	
+string appending is inefficient -> should use a string buffer
+
+32: operators, operands and expressions
+operators are special symbols that perform speicific tasks
+
+operand is what's manuipulated by the operator
+expression is a combination of operands and operators
+
+x= where x is a operator is a short hand version of writing the operator
+e.g. result *= 10 => result = result * 10
+
+34. if-then statement
+compare equals is 2 equal signs (==)
+
+38.Ternary Operator
+can only be used as part of an assignment cannot be used alone
+e.g. boolean test = (x = 10) ? true : false;
+
+43.Keywords and Expressions
+Keywords are highlighted in blue in java
+-reserved words 
+
+expressions:
+variable assignment
+e.g. myVariable = 50
+int myVariable = 50; <= is a statement 
+control flow statement
+	- things in the brackets are expressions
+	
+
+47.Methods in java
+methods ~ function
+
+55. Coding Exercises Example Part 2
+to use methods from other classes state the class than use the dot notation to access the method
+e.g. class.method()
+
+56. Coding Excerises Example Part 3
+methods that have print statements can be invoked from other methods/classes that being said if a method has a return type, it's necessary to do additional work with the result
+i.e. cannot expect the return value to be printed if the type is not
+
+
+
+
