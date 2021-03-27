@@ -9,21 +9,83 @@ public class Main {
 //            System.out.println("10,000 at " + i + "% interest = " + String.format("%.2f",calculateInterest(10000.0,i)));
 //        }
 
-        int a = 7;
-        int primeCount = 0;
+//        int a = 7;
+//        int primeCount = 0;
+//
+//        for(int i = a; i > 0; i--){
+//            if(isPrime(i)){
+//                System.out.println(i);
+//                primeCount++;
+//            }
+//
+//            if(primeCount == 3){
+//                break;
+//            }
+//        }
 
-        for(int i = a; i > 0; i--){
-            if(isPrime(i)){
-                System.out.println(i);
-                primeCount++;
+//        System.out.println("sum of Odd = " + sumOdd(101,101));
+        int number = 4;
+        int finishNumber = 20;
+        int evenCount = 0;
+        int sumEvenNum = 0;
+
+        while (number <= finishNumber){
+            number++;
+            if(!isEvenNUmber(number)){
+                continue;
             }
 
-            if(primeCount == 3){
+            evenCount++;
+
+            System.out.println("even number " + evenCount);
+//            System.out.println("Even number " + number);
+            sumEvenNum += number;
+
+            if(evenCount == 5){
+                System.out.println("sum of even numbers " + sumEvenNum);
                 break;
+            }
+
+        }
+        System.out.println("Total even numbers found " + evenCount);
+    }
+
+    public static boolean isEvenNUmber(int number){
+        boolean retValue = false;
+
+        if((number % 2) == 0){
+            retValue = true;
+        }
+
+        return retValue;
+    }
+
+    public static int sumOdd(int start, int end){
+        int retValue = -1;
+        int sumValue = 0;
+
+        if(start > end || start < 0 || end < 0){
+            return retValue;
+        }
+
+        for (int i = start; i <= end; i++){
+            if(isOdd(i)){
+               sumValue += i;
             }
         }
 
+        return sumValue;
+    }
 
+
+    public static boolean isOdd (int number){
+        boolean retVal = false;
+
+        if(number > 0 && number % 2 ==1){
+            retVal = true;
+        }
+
+        return retVal;
     }
 
     public static double calculateInterest(double amount, double interestRate){

@@ -157,6 +157,60 @@ e.g. class.method()
 methods that have print statements can be invoked from other methods/classes that being said if a method has a return type, it's necessary to do additional work with the result
 i.e. cannot expect the return value to be printed if the type is not
 
+63. The switch statement - the value to test can only be one variable
+byte,short, char, int, string
+switch(ValueToTest){
+	case value1:
+			Code
+			break;
+	case value2:
+	default:
+		code
+		break; //not necessary but good for readability
+}
+-If break is not used the case switch statement will also execute the other values
+
+String.toLower() or .toUpper() will convert the string value to all lower case or upper case
+
+65. The For Statement
+-used to iterate a certain amount of times
+for(initialize; termination; increment){
+}
 
 
 
+
+71. Parsing values from strings.
+using parsing methods you can convert strings to different types
+-> integers
+	-- Integer.parseInt("2018");
+-> double
+	-- Double.parseDouble("2018.123")
+
+Integer == wrapper class for data type int
+
+parse is a 
+
+java auto converts to the data type of the left of the equal sign
+
+
+Reading user input
+
+Scanner -- import java.util.Scanner;
+
+Scanner scanner = new Scanner(System.in); //System.in is the input
+
+Scanner is a built int class and allows us to read in user input
+
+String name = scanner.nextLine();// used to read the next line from the scanner input
+
+int yearOfBirth = scanner.nextInt() // will parse the string as an integer
+
+scanner.close();  // when done using a scanner need to close it to release the memory
+
+when using nextInt() the enter key will cause skipping the next nextLine() call so a nextline() will be needed to
+capture the enter key
+
+boolean hasNextInt = scanner.hasNextInt(); //checks if the next input entered is a number must be done prior to nextInt()
+
+potential problems
